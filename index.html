@@ -1,0 +1,1065 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Trolley"><meta name="theme-color" content="#F1F4EF"><!-- Split the Trolley V3 — GitHub Pages edition. Data lives on each phone; hand-off codes move hauls between phones. --><title>Split the Trolley</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"></head><body><script id="app-state" type="application/json">{"v":1,"cur":"R","names":{"W":"Wikus","R":"Rochell"},"splitW":65,"budget":8000,"cats":["Groceries","Household","Toiletries","Pets","Takeaways","Other"],"entries":[{"id":"mtegdnu6wjmai","date":"2026-08-01","who":"W","title":"Checkers","amount":815,"cat":"Groceries","note":""},{"id":"mteger6j51crc","date":"2026-08-03","who":"W","title":"Parkerville","amount":283,"cat":"Groceries","note":""},{"id":"mtegfpr222wh4","date":"2026-08-07","who":"W","title":"Fat bois","amount":280,"cat":"Takeaways","note":""},{"id":"mteggd5tkiuj1","date":"2026-08-08","who":"W","title":"Checkers","amount":1075,"cat":"Groceries","note":""},{"id":"mtegh5ocmj4j6","date":"2026-08-10","who":"W","title":"Checkers","amount":370,"cat":"Groceries","note":""},{"id":"mteghqhgzo3su","date":"2026-08-14","who":"W","title":"Issabellas","amount":255,"cat":"Takeaways","note":""},{"id":"mtegicyztmc0q","date":"2026-08-16","who":"W","title":"Checkers","amount":877,"cat":"Groceries","note":""},{"id":"mtegiz9cgipq8","date":"2026-08-22","who":"W","title":"Checkers","amount":900,"cat":"Groceries","note":""},{"id":"mtegjhzs22o6q","date":"2026-08-28","who":"W","title":"Checkers","amount":530,"cat":"Groceries","note":""},{"id":"mtegk015ro31d","date":"2026-08-28","who":"W","title":"Romans","amount":220,"cat":"Takeaways","note":""},{"id":"mten4pz0a2bvz","date":"2026-08-01","who":"R","title":"KFC","amount":193,"cat":"Takeaways","note":""},{"id":"mten5neudt855","date":"2026-08-05","who":"R","title":"Pnp","amount":318,"cat":"Groceries","note":""},{"id":"mten6upw3tv7r","date":"2026-08-08","who":"R","title":"Woolies","amount":117,"cat":"Groceries","note":""},{"id":"mten7much9575","date":"2026-08-08","who":"R","title":"Checkers","amount":286,"cat":"Groceries","note":""},{"id":"mten8nekfhwzj","date":"2026-08-14","who":"R","title":"McDonald's","amount":296,"cat":"Takeaways","note":""},{"id":"mten9l983xgjz","date":"2026-08-18","who":"R","title":"Parkville","amount":218,"cat":"Groceries","note":""},{"id":"mtenaq29izqif","date":"2026-08-21","who":"R","title":"Steers","amount":199,"cat":"Takeaways","note":""},{"id":"mtenbzr5j59nj","date":"2026-08-23","who":"R","title":"Checkers","amount":184,"cat":"Groceries","note":""},{"id":"mtfo5vlngpzn5","date":"2026-08-30","who":"W","title":"Food lovers","amount":220,"cat":"Groceries","note":""},{"id":"mtfo6877rm5ez","date":"2026-08-30","who":"W","title":"Checkers","amount":800,"cat":"Groceries","note":""},{"id":"mtpxe20rok411","date":"2026-09-05","who":"W","title":"Checkers","amount":2057,"cat":"Groceries","note":"In store stockup"},{"id":"mtyj7zpvc2zna","date":"2026-09-11","who":"W","title":"Asian food","amount":290,"cat":"Takeaways","note":""},{"id":"mujkr5lg3v7qe","date":"2026-09-27","who":"W","title":"Checkers","amount":1275,"cat":"Groceries","note":""},{"id":"mujkrync8kgjw","date":"2026-09-20","who":"W","title":"Checkers","amount":1090,"cat":"Groceries","note":""},{"id":"mujkt9frn2c26","date":"2026-09-16","who":"W","title":"Pizza","amount":350,"cat":"Takeaways","note":""},{"id":"mujku2ab4bj8r","date":"2026-09-13","who":"W","title":"Checkers","amount":980,"cat":"Groceries","note":""},{"id":"mtl490sbs5g0n","date":"2026-09-02","who":"R","title":"Checkerd","amount":280,"cat":"Groceries","note":""},{"id":"mtsvyqmmxx7n2","date":"2026-09-08","who":"R","title":"Checkers","amount":204,"cat":"Groceries","note":""},{"id":"mtu4h3rduxiwr","date":"2026-09-04","who":"R","title":"Steers","amount":200,"cat":"Takeaways","note":""},{"id":"mucidrb7z12a8","date":"2026-09-10","who":"R","title":"Ambassadors","amount":323,"cat":"Groceries","note":""},{"id":"mucie6tiikm0b","date":"2026-09-16","who":"R","title":"Checkers","amount":221,"cat":"Groceries","note":""},{"id":"mucies7rlnyx3","date":"2026-09-18","who":"R","title":"McDonalds","amount":202,"cat":"Takeaways","note":""}],"deleted":["mtzw3s5430lkq"],"settled":{"2026-08":true},"cycleDay":25}</script><script id="app-src" type="text/plain">
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+:root{
+  color-scheme:light;
+  --ground:#F1F4EF;
+  --surface:#FFFFFF;
+  --surface-2:#E7EDE5;
+  --ink:#151B18;
+  --ink-2:#4C5751;
+  --ink-3:#7E8981;
+  --line:#D5DDD2;
+  --line-2:#C3CDBF;
+  --accent:#2F6B4F;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#DDEAE0;
+  --w:#255F7D;
+  --w-soft:#D8E7EF;
+  --r:#8C3F63;
+  --r-soft:#F2DCE7;
+  --warn:#AC4227;
+  --warn-soft:#F7DFD8;
+  --radius:14px;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0F1412;
+    --surface:#181F1B;
+    --surface-2:#212A24;
+    --ink:#E6EDE7;
+    --ink-2:#A6B2AA;
+    --ink-3:#7A867E;
+    --line:#2A3430;
+    --line-2:#3A4640;
+    --accent:#6DBE8D;
+    --accent-ink:#0F1412;
+    --accent-soft:#1C2F25;
+    --w:#7FBEDA;
+    --w-soft:#153140;
+    --r:#DC8FB0;
+    --r-soft:#3A1D2B;
+    --warn:#E68566;
+    --warn-soft:#3A2118;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0F1412;
+  --surface:#181F1B;
+  --surface-2:#212A24;
+  --ink:#E6EDE7;
+  --ink-2:#A6B2AA;
+  --ink-3:#7A867E;
+  --line:#2A3430;
+  --line-2:#3A4640;
+  --accent:#6DBE8D;
+  --accent-ink:#0F1412;
+  --accent-soft:#1C2F25;
+  --w:#7FBEDA;
+  --w-soft:#153140;
+  --r:#DC8FB0;
+  --r-soft:#3A1D2B;
+  --warn:#E68566;
+  --warn-soft:#3A2118;
+}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+.wrap{max-width:520px;margin:0 auto;padding:0 16px 132px}
+.num{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+
+/* ---- masthead ---- */
+.mast{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:20px 0 12px}
+.mast h1{
+  font-family:"Bricolage Grotesque","Karla",sans-serif;
+  font-weight:800;font-size:19px;letter-spacing:-.02em;margin:0;text-wrap:balance;
+}
+.mast h1 span{color:var(--accent)}
+.sync{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.dot.busy{background:var(--ink-3);animation:pulse 1s ease-in-out infinite}
+.dot.local{background:var(--warn)}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.dot.busy{animation:none}}
+
+/* ---- tabs ---- */
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--surface-2);padding:4px;border-radius:11px;margin-bottom:16px}
+.tabs button{
+  border:0;background:transparent;padding:8px 4px;border-radius:8px;cursor:pointer;
+  font-size:13px;font-weight:600;color:var(--ink-2);
+}
+.tabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+/* ---- month nav ---- */
+.monthnav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}
+.monthnav b{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em}
+.mlabel{display:flex;flex-direction:column;align-items:center;gap:1px;min-width:0;text-align:center}
+.mlabel .range{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.06em;color:var(--ink-3);white-space:nowrap}
+.rng{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;font-weight:400;color:var(--ink-3);white-space:nowrap}
+.arrow{
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+  width:36px;height:36px;border-radius:10px;cursor:pointer;display:grid;place-items:center;font-size:15px;
+}
+.arrow:disabled{opacity:.35;cursor:default}
+
+/* ---- till slip ---- */
+.slip{
+  position:relative;background:var(--surface);border-radius:var(--radius) var(--radius) 0 0;
+  padding:20px 18px 22px;
+  -webkit-mask-image:radial-gradient(circle at 7px 100%, rgba(0,0,0,0) 0 6px, #000 6.6px);
+  mask-image:radial-gradient(circle at 7px 100%, rgba(0,0,0,0) 0 6px, #000 6.6px);
+  -webkit-mask-size:14px 100%;mask-size:14px 100%;
+  -webkit-mask-repeat:repeat-x;mask-repeat:repeat-x;
+  margin-bottom:18px;
+}
+.slip .total{
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:800;
+  font-size:clamp(38px,12vw,48px);line-height:1;letter-spacing:-.035em;margin:6px 0 0;
+  font-variant-numeric:tabular-nums;
+}
+.tear{border-top:1px dashed var(--line-2);margin:16px 0}
+.subline{font-size:13px;color:var(--ink-2);margin-top:6px}
+
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden;margin-top:12px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar i.over{background:var(--warn)}
+
+.paid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.paid div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.paid .who{font-size:12px;font-weight:700;letter-spacing:.02em}
+.paid .who.W{color:var(--w)}
+.paid .who.R{color:var(--r)}
+.paid .amt{font-size:19px;font-weight:600}
+.paid .tgt{font-size:11px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+
+.settle{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.settle .txt{font-size:14px;line-height:1.35}
+.settle .txt b{font-weight:700}
+.settle .amt{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.even{font-size:14px;color:var(--ink-2)}
+
+.settled-row{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:13px;color:var(--ink-2)}
+.settled-row input{width:17px;height:17px;accent-color:var(--accent)}
+
+/* ---- section ---- */
+.sec{margin:22px 0 10px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+
+/* ---- entries ---- */
+.daygroup{margin-bottom:14px}
+.daylab{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:0 2px 6px}
+.rows{display:flex;flex-direction:column;gap:1px;background:var(--line);border-radius:var(--radius);overflow:hidden}
+.row{
+  display:flex;align-items:center;gap:12px;background:var(--surface);
+  padding:13px 14px;width:100%;border:0;text-align:left;cursor:pointer;
+}
+.row:active{background:var(--surface-2)}
+.tag{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:12px;font-weight:700;flex:none;font-family:"IBM Plex Mono",monospace}
+.tag.W{background:var(--w-soft);color:var(--w)}
+.tag.R{background:var(--r-soft);color:var(--r)}
+.row .body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px}
+.row .t{display:block;font-weight:600;font-size:15px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .m{display:block;font-size:12px;line-height:1.3;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .v{flex:none;margin-left:auto;text-align:right;font-weight:600;font-size:15px;white-space:nowrap}
+
+.empty{background:var(--surface);border-radius:var(--radius);padding:28px 20px;text-align:center;color:var(--ink-3);font-size:14px;border:1px dashed var(--line-2)}
+
+/* ---- category breakdown ---- */
+.cats{background:var(--surface);border-radius:var(--radius);padding:14px 16px;display:flex;flex-direction:column;gap:11px}
+.catrow{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-size:13px}
+.catrow .cbar{grid-column:1/-1;height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.catrow .cbar i{display:block;height:100%;background:var(--accent);opacity:.75}
+
+/* ---- history ---- */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:18px}
+.stat{background:var(--surface);border-radius:12px;padding:11px 10px 12px;min-width:0}
+.stat .eyebrow{font-size:10px;letter-spacing:.08em}
+.stat .k{font-size:15px;font-weight:700;letter-spacing:-.01em;margin-top:4px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.mrow{background:var(--surface);border-radius:12px;padding:13px 15px;margin-bottom:8px;cursor:pointer;border:0;width:100%;text-align:left;display:block}
+.mrow .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.mrow .nm{font-weight:600;font-size:15px}
+.mrow .tt{font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.mrow .hb{display:flex;height:7px;border-radius:99px;overflow:hidden;margin:9px 0 7px;background:var(--surface-2)}
+.mrow .hb i{display:block;height:100%}
+.mrow .hb i.W{background:var(--w)}
+.mrow .hb i.R{background:var(--r)}
+.mrow .ft{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink-3)}
+.pill{display:inline-block;font-size:10px;font-family:"IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+
+/* ---- setup ---- */
+.card{background:var(--surface);border-radius:var(--radius);padding:16px;margin-bottom:12px}
+.card h3{margin:0 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:15px;letter-spacing:-.01em}
+.card p.hint{margin:0 0 14px;font-size:13px;color:var(--ink-3);line-height:1.4}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field label{font-size:12px;font-weight:600;color:var(--ink-2)}
+.field input[type=text],.field input[type=number],.field input[type=date],.field select,.field textarea{
+  background:var(--ground);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font-size:16px;width:100%;
+}
+.field textarea{min-height:64px;resize:vertical}
+.splitview{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
+.splitview .s{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:26px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.splitview .s.W{color:var(--w)}
+.splitview .s.R{color:var(--r)}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+.btn{
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink);
+  padding:11px 14px;border-radius:11px;font-size:14px;font-weight:600;cursor:pointer;width:100%;
+}
+.btn:active{background:var(--surface-2)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.danger{color:var(--warn);border-color:var(--warn)}
+.btnrow{display:flex;gap:8px}
+
+/* ---- who picker ---- */
+.who-pick{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.who-pick button{
+  border:1px solid var(--line);background:var(--ground);padding:12px 8px;border-radius:11px;
+  font-size:14px;font-weight:600;cursor:pointer;
+}
+.who-pick button[aria-pressed="true"].W{background:var(--w-soft);border-color:var(--w);color:var(--w)}
+.who-pick button[aria-pressed="true"].R{background:var(--r-soft);border-color:var(--r);color:var(--r)}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.chips button{
+  border:1px solid var(--line);background:var(--ground);color:var(--ink-2);
+  padding:6px 10px;border-radius:99px;font-size:13px;cursor:pointer;
+}
+
+/* ---- bottom bar ---- */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:linear-gradient(to top,var(--ground) 62%,rgba(0,0,0,0));
+  display:flex;justify-content:center;pointer-events:none;
+}
+.dock .inner{width:100%;max-width:520px;pointer-events:auto}
+.dock button{
+  width:100%;border:0;background:var(--accent);color:var(--accent-ink);
+  padding:15px;border-radius:13px;font-size:16px;font-weight:700;cursor:pointer;
+  box-shadow:0 6px 20px -8px rgba(0,0,0,.45);
+}
+
+/* ---- sheet ---- */
+.scrim{position:fixed;inset:0;background:rgba(10,16,13,.5);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.sheet{
+  background:var(--ground);width:100%;max-width:520px;border-radius:18px 18px 0 0;
+  padding:18px 16px calc(18px + env(safe-area-inset-bottom));max-height:92vh;overflow:auto;
+}
+.sheet h2{margin:0 0 14px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em}
+.grab{width:38px;height:4px;border-radius:99px;background:var(--line-2);margin:0 auto 14px}
+
+.banner{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:11px 13px;font-size:13px;line-height:1.45;margin-bottom:14px}
+.banner b{font-weight:700}
+.banner.info{background:var(--surface-2);color:var(--ink-2)}
+.banner.flash{background:var(--accent-soft);color:var(--accent)}
+.elsewhere{margin-top:10px;font-size:13px}
+.linkbtn{border:0;background:none;padding:0;margin:0;color:var(--accent);font-weight:700;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.note{font-size:12px;color:var(--ink-3);margin-top:8px;line-height:1.4}
+.codebox{display:block;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line);border-radius:9px;padding:10px;font-size:11px;line-height:1.4;max-height:130px;overflow:auto;font-family:"IBM Plex Mono",ui-monospace,monospace;resize:vertical}
+/*==JS==*/
+(function(){
+"use strict";
+
+var FONT_HEAD =
+ '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+ '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+ '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">';
+
+var MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var LS_PENDING="trolley.pending.v1", LS_ME="trolley.me.v1", SS_UI="trolley.ui.v1", LS_SENT="trolley.sent.v1",
+    LS_MIRROR="trolley.mirror.v1";
+
+var S=null, root=document.getElementById("root"), api=null;
+var mode="unknown";           /* unknown | writer | local */
+var syncState="idle";         /* idle | busy | saved | local */
+var pubTimer=null, pending={add:[],del:[]}, me="W", waited=0;
+var ui={tab:"month",month:null,form:null,codeOut:null,codeKind:"",msg:"",confirmWipe:false,imp:"",flash:""};
+var restored=0;
+var PHONE_WINS=!window.claude; /* GitHub build: this phone is the record */
+var SETTING_KEYS=["cur","names","splitW","budget","cats","settled","cycleDay"];
+var SS_IMP="trolley.imp.v1";
+function setImp(v){
+  ui.imp=v;
+  try{v?sessionStorage.setItem(SS_IMP,v):sessionStorage.removeItem(SS_IMP);}catch(e){}
+}
+
+/* ---------- utils ---------- */
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function r2(n){return Math.round((n+Number.EPSILON)*100)/100;}
+function money(n,bare){
+  var neg=n<-0.004; var v=Math.abs(r2(n)).toFixed(2).split(".");
+  v[0]=v[0].replace(/\B(?=(\d{3})+(?!\d))/g," ");
+  return (neg?"-":"")+(bare?"":S.cur)+v[0]+"."+v[1];
+}
+function today(){var d=new Date();return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());}
+function pad(n){return n<10?"0"+n:""+n;}
+/* The grocery month runs from cycleDay of one month to the day before
+   cycleDay of the next, and is named after the month it ENDS in.
+   cycleDay 1 means plain calendar months. */
+function cycleDay(){var d=parseInt(S.cycleDay,10);return (d>=2&&d<=28)?d:1;}
+function mkey(dateStr){
+  var s=String(dateStr), m=s.slice(0,7), cd=cycleDay();
+  if(cd===1)return m;
+  var day=parseInt(s.slice(8,10),10)||1;
+  return day>=cd?shiftMonth(m,1):m;
+}
+function periodRange(k){
+  var cd=cycleDay();
+  if(cd===1){
+    var last=new Date(parseInt(k.slice(0,4),10),parseInt(k.slice(5,7),10),0).getDate();
+    return {start:k+"-01",end:k+"-"+pad(last)};
+  }
+  return {start:shiftMonth(k,-1)+"-"+pad(cd),end:k+"-"+pad(cd-1)};
+}
+function dm(ds){var p=ds.split("-");return (+p[2])+" "+MONTHS[+p[1]-1].slice(0,3);}
+function rangeLabel(k){var r=periodRange(k);return dm(r.start)+" – "+dm(r.end);}
+function mlabel(k){var p=k.split("-");return MONTHS[parseInt(p[1],10)-1]+" "+p[0];}
+function mshort(k){var p=k.split("-");return MONTHS[parseInt(p[1],10)-1].slice(0,3)+" "+p[0];}
+function shiftMonth(k,d){
+  var y=parseInt(k.slice(0,4),10), m=parseInt(k.slice(5,7),10)-1+d;
+  y+=Math.floor(m/12); m=((m%12)+12)%12;
+  return y+"-"+pad(m+1);
+}
+function dayLabel(ds){
+  var p=ds.split("-"); var d=new Date(+p[0],+p[1]-1,+p[2]);
+  var wd=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][d.getDay()];
+  if(ds===today())return "Today · "+wd+" "+(+p[2])+" "+MONTHS[+p[1]-1].slice(0,3);
+  return wd+" "+(+p[2])+" "+MONTHS[+p[1]-1].slice(0,3);
+}
+function shortDate(ds){
+  if(ds===today())return "today";
+  var p=String(ds).split("-");
+  if(p.length<3)return ds;
+  return (+p[2])+" "+MONTHS[+p[1]-1].slice(0,3)+(p[0]===today().slice(0,4)?"":" "+p[0]);
+}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7);}
+function parseAmt(v){
+  v=String(v).replace(/[^0-9.,-]/g,"").replace(/\s/g,"");
+  if(v.indexOf(",")>-1&&v.indexOf(".")===-1)v=v.replace(",",".");
+  else v=v.replace(/,/g,"");
+  var n=parseFloat(v); return isFinite(n)?n:NaN;
+}
+
+/* ---------- state ---------- */
+function loadState(){
+  var raw=document.getElementById("app-state").textContent;
+  try{S=JSON.parse(raw);}catch(e){S=null;}
+  if(!S||typeof S!=="object")S={};
+  if(!S.cur)S.cur="R";
+  if(!S.names)S.names={W:"Wikus",R:"Rochell"};
+  if(typeof S.splitW!=="number")S.splitW=65;
+  if(typeof S.budget!=="number")S.budget=0;
+  if(typeof S.cycleDay!=="number"||S.cycleDay<1||S.cycleDay>28)S.cycleDay=1;
+  if(!Array.isArray(S.cats))S.cats=["Groceries","Household","Toiletries","Pets","Takeaways","Other"];
+  if(!Array.isArray(S.entries))S.entries=[];
+  if(!Array.isArray(S.deleted))S.deleted=[];
+  if(!S.settled)S.settled={};
+  try{var p=JSON.parse(localStorage.getItem(LS_PENDING)||"null");
+      if(p&&p.add&&p.del)pending=p;}catch(e){}
+  try{var m=localStorage.getItem(LS_ME); if(m==="W"||m==="R")me=m;}catch(e){}
+  mergeMirror();
+  mergePending();
+}
+/* This phone keeps its own full copy of the ledger. If the page ever comes
+   back with an older ledger than this phone has seen, the missing hauls are
+   put back here and saved again. The page always wins on hauls it already
+   holds, and anything deleted stays deleted. */
+function mergeMirror(){
+  var mir=null;
+  try{mir=JSON.parse(localStorage.getItem(LS_MIRROR)||"null");}catch(e){}
+  if(!mir||!Array.isArray(mir.entries))return;
+  var i;
+  if(PHONE_WINS&&mir.settings&&typeof mir.settings==="object")
+    for(i=0;i<SETTING_KEYS.length;i++)
+      if(mir.settings[SETTING_KEYS[i]]!==undefined)S[SETTING_KEYS[i]]=mir.settings[SETTING_KEYS[i]];
+  if(Array.isArray(mir.deleted))
+    for(i=0;i<mir.deleted.length;i++)
+      if(S.deleted.indexOf(mir.deleted[i])===-1)S.deleted.push(mir.deleted[i]);
+  var del={},have={};
+  for(i=0;i<S.deleted.length;i++)del[S.deleted[i]]=1;
+  for(i=0;i<S.entries.length;i++)have[S.entries[i].id]=1;
+  for(i=0;i<mir.entries.length;i++){
+    var e=mir.entries[i];
+    if(!e||!e.id||del[e.id])continue;
+    if(have[e.id]){
+      if(PHONE_WINS)for(var q=0;q<S.entries.length;q++)if(S.entries[q].id===e.id){S.entries[q]=e;break;}
+      continue;
+    }
+    S.entries.push(e);have[e.id]=1;restored++;
+  }
+  S.entries=S.entries.filter(function(x){return !del[x.id];});
+}
+function saveMirror(){
+  try{var st={};for(var i=0;i<SETTING_KEYS.length;i++)st[SETTING_KEYS[i]]=S[SETTING_KEYS[i]];
+  localStorage.setItem(LS_MIRROR,JSON.stringify({entries:S.entries,deleted:S.deleted,settings:st}));}catch(e){}
+}
+function mergePending(){
+  var have={},i;
+  for(i=0;i<S.entries.length;i++)have[S.entries[i].id]=1;
+  var delSet={};
+  for(i=0;i<S.deleted.length;i++)delSet[S.deleted[i]]=1;
+  for(i=0;i<pending.del.length;i++)delSet[pending.del[i]]=1;
+  var keepAdd=[];
+  for(i=0;i<pending.add.length;i++){
+    var e=pending.add[i];
+    if(delSet[e.id])continue;
+    if(!have[e.id]){S.entries.push(e);have[e.id]=1;keepAdd.push(e);}
+  }
+  pending.add=keepAdd;
+  var keepDel=[];
+  for(i=0;i<pending.del.length;i++){
+    var id=pending.del[i];
+    if(S.deleted.indexOf(id)===-1)keepDel.push(id);
+  }
+  pending.del=keepDel;
+  S.entries=S.entries.filter(function(e){return !delSet[e.id];});
+  for(i=0;i<pending.del.length;i++)if(S.deleted.indexOf(pending.del[i])===-1)S.deleted.push(pending.del[i]);
+  savePending();
+}
+function savePending(){
+  try{localStorage.setItem(LS_PENDING,JSON.stringify(pending));}catch(e){}
+}
+function hasPending(){return pending.add.length>0||pending.del.length>0;}
+
+/* ---------- maths ---------- */
+function monthEntries(k){
+  return S.entries.filter(function(e){return mkey(e.date)===k;})
+    .sort(function(a,b){return a.date<b.date?1:a.date>b.date?-1:(a.id<b.id?1:-1);});
+}
+function summarise(k){
+  var es=monthEntries(k), total=0, paid={W:0,R:0}, byCat={};
+  for(var i=0;i<es.length;i++){
+    var e=es[i], a=+e.amount||0;
+    total+=a;
+    paid[e.who==="R"?"R":"W"]+=a;
+    var c=e.cat||"Other";
+    byCat[c]=(byCat[c]||0)+a;
+  }
+  total=r2(total); paid.W=r2(paid.W); paid.R=r2(paid.R);
+  var tw=r2(total*S.splitW/100), tr=r2(total-tw);
+  var diff=r2(tw-paid.W);           /* >0 : Wikus underpaid */
+  var settle=null;
+  if(Math.abs(diff)>=0.005)settle={from:diff>0?"W":"R",to:diff>0?"R":"W",amount:Math.abs(diff)};
+  return {k:k,entries:es,total:total,paid:paid,target:{W:tw,R:tr},settle:settle,byCat:byCat,count:es.length};
+}
+function allMonths(){
+  var set={};
+  for(var i=0;i<S.entries.length;i++)set[mkey(S.entries[i].date)]=1;
+  var ks=Object.keys(set); ks.sort(); ks.reverse();
+  return ks;
+}
+
+/* ---------- persistence ---------- */
+function commit(opts){
+  saveMirror();
+  render();
+  if(mode==="local"){syncState="local";paintSync();return;}
+  clearTimeout(pubTimer);
+  syncState="busy";paintSync();
+  pubTimer=setTimeout(publishNow,(opts&&opts.now)?150:900);
+}
+function buildDoc(){
+  var json=JSON.stringify(S).replace(/</g,"\\u003c");
+  var src=document.getElementById("app-src").textContent;
+  var boot=document.getElementById("boot").textContent;
+  var S1="<scr"+"ipt", E1="</scr"+"ipt>";
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8">'+
+    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'+
+    '<title>Split the Trolley</title>'+FONT_HEAD+'</head><body>'+
+    S1+' id="app-state" type="application/json">'+json+E1+
+    S1+' id="app-src" type="text/plain">'+src+E1+
+    '<div id="root"></div>'+
+    S1+' id="boot">'+boot+E1+
+    '</body></html>';
+}
+function publishNow(){
+  if(!api){                                  /* capability still resolving */
+    if(waited<14){waited++;clearTimeout(pubTimer);pubTimer=setTimeout(publishNow,1000);return;}
+    mode="local";syncState="local";paintSync();render();return;
+  }
+  if(!api.publish){mode="local";syncState="local";paintSync();return;}
+  try{sessionStorage.setItem(SS_UI,JSON.stringify({tab:ui.tab,month:ui.month}));}catch(e){}
+  api.publish(buildDoc()).then(function(){
+    pending={add:[],del:[]};savePending();
+    syncState="saved";paintSync();
+  }).catch(function(err){
+    var c=(err&&err.code)||"upstream_error";
+    if(c==="conflict"){return;}            /* the view reloads to the winner */
+    if(c==="rate_limited"){clearTimeout(pubTimer);pubTimer=setTimeout(publishNow,4000);return;}
+    if(c==="upstream_error"){clearTimeout(pubTimer);pubTimer=setTimeout(publishNow,2500);return;}
+    mode="local";syncState="local";paintSync();render();
+  });
+}
+function paintSync(){
+  var el=document.getElementById("syncchip");
+  if(!el)return;
+  var cls="dot",txt="Saved";
+  if(syncState==="busy"){cls="dot busy";txt="Saving…";}
+  else if(syncState==="local"){cls="dot local";txt="This phone";}
+  el.innerHTML='<span class="'+cls+'"></span>'+esc(txt);
+}
+
+/* ---------- render ---------- */
+function render(){
+  if(ui.month===null)ui.month=mkey(today());
+  var h="";
+  h+='<div class="wrap">';
+  h+='<div class="mast"><h1>Split the <span>Trolley</span></h1><div class="sync" id="syncchip"></div></div>';
+  h+='<div class="tabs" role="tablist">'+
+     tabBtn("month","Month")+tabBtn("history","History")+tabBtn("setup","Setup")+'</div>';
+  if(ui.flash)
+    h+='<div class="banner flash">'+esc(ui.flash)+
+       ' <button class="linkbtn" data-act="dismiss">Got it</button></div>';
+  if(mode==="local"&&ui.tab!=="setup")
+    h+='<div class="banner info">Hauls you log here stay on this phone. '+
+       '<button class="linkbtn" data-act="gosend">Send them to '+esc(S.names[me==="W"?"R":"W"])+' →</button></div>';
+  if(ui.tab==="month")h+=viewMonth();
+  else if(ui.tab==="history")h+=viewHistory();
+  else h+=viewSetup();
+  h+='</div>';
+  h+='<div class="dock"><div class="inner"><button data-act="open-form">+ Log a haul</button></div></div>';
+  if(ui.form)h+=sheetForm();
+  root.innerHTML=h;
+  paintSync();
+}
+function tabBtn(id,label){
+  return '<button role="tab" aria-selected="'+(ui.tab===id)+'" data-act="tab" data-tab="'+id+'">'+label+'</button>';
+}
+
+function viewMonth(){
+  var k=ui.month, s=summarise(k), h="";
+  var months=allMonths();
+  var oldest=months.length?months[months.length-1]:k;
+  h+='<div class="monthnav">'+
+     '<button class="arrow" data-act="mprev" aria-label="Previous month"'+(k<=shiftMonth(oldest,-12)?" disabled":"")+'>‹</button>'+
+     '<div class="mlabel"><b>'+esc(mlabel(k))+'</b>'+
+     (cycleDay()>1?'<span class="range">'+esc(rangeLabel(k))+'</span>':"")+'</div>'+
+     '<button class="arrow" data-act="mnext" aria-label="Next month"'+(k>=shiftMonth(mkey(today()),1)?" disabled":"")+'>›</button>'+
+     '</div>';
+
+  h+='<div class="slip">';
+  h+='<div class="eyebrow">Total spent</div>';
+  h+='<div class="total">'+esc(money(s.total))+'</div>';
+  h+='<div class="subline">'+s.count+' haul'+(s.count===1?"":"s")+' logged</div>';
+  if(S.budget>0){
+    var pct=Math.min(100,s.total/S.budget*100), over=s.total>S.budget;
+    h+='<div class="bar"><i class="'+(over?"over":"")+'" style="width:'+pct.toFixed(1)+'%"></i></div>';
+    h+='<div class="subline">'+(over
+        ? '<b style="color:var(--warn)">'+esc(money(s.total-S.budget))+' over</b> the '+esc(money(S.budget))+' budget'
+        : esc(money(S.budget-s.total))+' left of '+esc(money(S.budget)))+'</div>';
+  }
+  h+='<div class="tear"></div>';
+  h+='<div class="paid">'+
+     paidCell("W",s)+paidCell("R",s)+
+     '</div>';
+  h+='<div class="tear"></div>';
+  if(s.settle){
+    h+='<div class="settle"><div class="txt"><b>'+esc(S.names[s.settle.from])+'</b> owes '+esc(S.names[s.settle.to])+'</div>'+
+       '<div class="amt">'+esc(money(s.settle.amount))+'</div></div>';
+  }else{
+    h+='<div class="even">'+(s.total>0?"All square — nobody owes anybody.":"Nothing logged yet this month.")+'</div>';
+  }
+  h+='<div class="subline">Split '+S.splitW+' / '+(100-S.splitW)+' — change it under Setup</div>';
+  h+='<label class="settled-row"><input type="checkbox" data-act="settled"'+(S.settled[k]?" checked":"")+'> Marked as settled up</label>';
+  h+='</div>';
+
+  /* entries */
+  h+='<div class="sec"><div class="eyebrow">The hauls</div></div>';
+  if(!s.entries.length){
+    var other=null;
+    for(var q=0;q<months.length;q++)if(months[q]!==k){other=months[q];break;}
+    h+='<div class="empty">No hauls for '+esc(mlabel(k))+' yet.<br>Tap <b>Log a haul</b> to add the first one.'+
+       (other?'<div class="elsewhere"><button class="linkbtn" data-act="gomonth" data-month="'+esc(other)+'">'+
+          esc(mlabel(other))+' has '+summarise(other).count+' haul'+(summarise(other).count===1?"":"s")+' →</button></div>':"")+
+       '</div>';
+  }else{
+    var day=null,open=false;
+    for(var i=0;i<s.entries.length;i++){
+      var e=s.entries[i];
+      if(e.date!==day){
+        if(open)h+='</div></div>';
+        day=e.date;open=true;
+        h+='<div class="daygroup"><div class="daylab">'+esc(dayLabel(day))+'</div><div class="rows">';
+      }
+      h+='<button class="row" data-act="edit" data-id="'+esc(e.id)+'">'+
+         '<span class="tag '+(e.who==="R"?"R":"W")+'">'+esc((S.names[e.who]||"?").slice(0,1))+'</span>'+
+         '<span class="body"><span class="t">'+esc(e.title||"Haul")+'</span>'+
+         '<span class="m">'+esc((e.cat||"Other")+(e.note?" · "+e.note:""))+'</span></span>'+
+         '<span class="v num">'+esc(money(e.amount))+'</span></button>';
+    }
+    if(open)h+='</div></div>';
+  }
+
+  /* categories */
+  var cks=Object.keys(s.byCat);
+  if(cks.length>1){
+    cks.sort(function(a,b){return s.byCat[b]-s.byCat[a];});
+    h+='<div class="sec"><div class="eyebrow">Where it went</div></div><div class="cats">';
+    for(var j=0;j<cks.length;j++){
+      var v=s.byCat[cks[j]], w=s.total>0?v/s.total*100:0;
+      h+='<div class="catrow"><span>'+esc(cks[j])+'</span><span class="num">'+esc(money(v))+'</span>'+
+         '<span class="cbar"><i style="width:'+w.toFixed(1)+'%"></i></span></div>';
+    }
+    h+='</div>';
+  }
+  return h;
+}
+function paidCell(who,s){
+  return '<div><span class="who '+who+'">'+esc(S.names[who])+' paid</span>'+
+         '<span class="amt num">'+esc(money(s.paid[who]))+'</span>'+
+         '<span class="tgt">share '+esc(money(s.target[who]))+'</span></div>';
+}
+
+function viewHistory(){
+  var ms=allMonths(),h="";
+  if(!ms.length)return '<div class="empty">Nothing logged yet. Once you start logging hauls, every month lands here.</div>';
+  var year=mkey(today()).slice(0,4), ytd=0, sum=0, max=0, maxK=ms[0];
+  var sums=[];
+  for(var i=0;i<ms.length;i++){
+    var s=summarise(ms[i]); sums.push(s); sum+=s.total;
+    if(ms[i].slice(0,4)===year)ytd+=s.total;
+    if(s.total>max){max=s.total;maxK=ms[i];}
+  }
+  h+='<div class="stats">'+
+     '<div class="stat"><div class="eyebrow">'+esc(year)+' total</div><div class="k num">'+esc(money(ytd))+'</div></div>'+
+     '<div class="stat"><div class="eyebrow">Monthly avg</div><div class="k num">'+esc(money(sum/ms.length))+'</div></div>'+
+     '<div class="stat"><div class="eyebrow">Biggest</div><div class="k num">'+esc(money(max))+'</div><div class="eyebrow">'+esc(mshort(maxK))+'</div></div>'+
+     '</div>';
+  for(var j=0;j<sums.length;j++){
+    var s2=sums[j];
+    var wp=s2.total>0?s2.paid.W/s2.total*100:50;
+    h+='<button class="mrow" data-act="gomonth" data-month="'+esc(s2.k)+'">'+
+       '<span class="top"><span class="nm">'+esc(mlabel(s2.k))+
+       (cycleDay()>1?' <span class="rng">'+esc(rangeLabel(s2.k))+'</span>':"")+
+       (S.settled[s2.k]?' <span class="pill">settled</span>':"")+'</span>'+
+       '<span class="tt num">'+esc(money(s2.total))+'</span></span>'+
+       '<span class="hb"><i class="W" style="width:'+wp.toFixed(1)+'%"></i><i class="R" style="width:'+(100-wp).toFixed(1)+'%"></i></span>'+
+       '<span class="ft"><span>'+esc(S.names.W)+' '+esc(money(s2.paid.W))+' · '+esc(S.names.R)+' '+esc(money(s2.paid.R))+'</span>'+
+       '<span>'+(s2.settle?esc(S.names[s2.settle.from])+" → "+esc(money(s2.settle.amount)):"square")+'</span></span>'+
+       '</button>';
+  }
+  return h;
+}
+
+function viewSetup(){
+  var h="";
+  h+='<div class="card"><h3>The split</h3><p class="hint">How the monthly total is divided. Change it whenever you like — it applies to every month’s calculation.</p>'+
+     '<div class="splitview"><span class="s W">'+S.splitW+'%</span><span class="eyebrow">'+esc(S.names.W)+' · '+esc(S.names.R)+'</span><span class="s R">'+(100-S.splitW)+'%</span></div>'+
+     '<input type="range" min="0" max="100" step="1" value="'+S.splitW+'" data-act="split" aria-label="Split percentage">'+
+     '</div>';
+
+  var cd=cycleDay(), nowK=mkey(today());
+  h+='<div class="card"><h3>When the month starts</h3>'+
+     '<p class="hint">The day your grocery month rolls over — set it to the day you do the big shop. Use 1 for plain calendar months.</p>'+
+     '<div class="field"><label for="f-cycle">Starts on day</label>'+
+     '<input id="f-cycle" type="number" inputmode="numeric" min="1" max="28" step="1" value="'+cd+'" data-act="cycleday"></div>'+
+     '<p class="note">'+(cd>1
+        ? 'Right now that means '+esc(rangeLabel(nowK))+', counted as '+esc(mlabel(nowK))+'. Hauls are filed by the period they fall in, so changing this reshuffles past months too.'
+        : 'Plain calendar months: 1st to the last day.')+'</p></div>';
+
+  h+='<div class="card"><h3>Monthly budget</h3><p class="hint">The target you two set for groceries each month. Leave it at 0 to hide the budget bar.</p>'+
+     '<div class="field"><label for="f-budget">Budget amount ('+esc(S.cur)+')</label>'+
+     '<input id="f-budget" type="number" inputmode="decimal" step="0.01" min="0" value="'+(S.budget||"")+'" placeholder="0.00" data-act="budget"></div></div>';
+
+  h+='<div class="card"><h3>Names &amp; currency</h3>'+
+     '<div class="field"><label for="f-nw">Name 1</label><input id="f-nw" type="text" value="'+esc(S.names.W)+'" data-act="name" data-who="W"></div>'+
+     '<div class="field"><label for="f-nr">Name 2</label><input id="f-nr" type="text" value="'+esc(S.names.R)+'" data-act="name" data-who="R"></div>'+
+     '<div class="field"><label for="f-cur">Currency symbol</label><input id="f-cur" type="text" maxlength="3" value="'+esc(S.cur)+'" data-act="cur"></div>'+
+     '<div class="field"><label>This phone belongs to</label><div class="who-pick">'+
+     '<button class="W" data-act="me" data-who="W" aria-pressed="'+(me==="W")+'">'+esc(S.names.W)+'</button>'+
+     '<button class="R" data-act="me" data-who="R" aria-pressed="'+(me==="R")+'">'+esc(S.names.R)+'</button>'+
+     '</div><p class="note">Only used to pre-fill who paid when you log a haul. Stays on this phone.</p></div>'+
+     '</div>';
+
+  h+='<div class="card"><h3>Categories</h3><p class="hint">One per line.</p>'+
+     '<div class="field"><textarea data-act="cats" aria-label="Categories">'+esc(S.cats.join("\n"))+'</textarea></div></div>';
+
+  var ls=lastSent(), other=S.names[me==="W"?"R":"W"];
+  h+='<div class="card"><h3>Hand off to '+esc(other)+'</h3>'+
+     '<p class="hint">Each phone keeps its own copy. Send your hauls across as a code — WhatsApp, SMS, anything — and '+esc(other)+' pastes it in below. Importing the same code twice is safe; nothing gets doubled up.</p>'+
+     '<div class="btnrow" style="margin-bottom:8px">'+
+     '<button class="btn primary" data-act="sendmonth">Send '+esc(mshort(ui.month).split(" ")[0])+'’s hauls</button>'+
+     '<button class="btn" data-act="sendall">Send everything</button></div>'+
+     (ls?'<p class="note" style="margin-bottom:10px">Last sent '+esc(shortDate(ls))+'.</p>':"")+
+     (ui.msg?'<div class="banner" style="background:var(--accent-soft);color:var(--accent)">'+esc(ui.msg)+'</div>':"")+
+     (ui.codeOut?'<label class="note" for="f-out">'+esc(ui.codeKind)+'</label>'+
+       '<textarea id="f-out" class="codebox" readonly rows="4">'+esc(ui.codeOut)+'</textarea>'+
+       '<button class="btn" style="margin-top:8px" data-act="copycode">Copy to clipboard</button>':"")+
+     '<div class="field" style="margin-top:14px"><label for="f-imp">Paste a code you were sent</label>'+
+     '<textarea id="f-imp" placeholder="TROLLEY1:..." aria-label="Import code">'+esc(ui.imp)+'</textarea>'+
+     '<div class="btnrow"><button class="btn" data-act="pasteimp">Paste from clipboard</button>'+
+     '<button class="btn primary" data-act="import">Import hauls</button></div></div>'+
+     '</div>';
+
+  h+='<div class="card"><h3>Backup</h3><p class="hint">Every haul and a month-by-month summary, as a spreadsheet.</p>'+
+     '<button class="btn" data-act="csv">Export CSV</button></div>';
+
+  h+='<div class="card"><h3>Danger zone</h3><p class="hint">Deletes every haul stored on this phone. There is no undo — export the CSV first if you want a copy.</p>'+
+     '<button class="btn danger" data-act="wipe">'+(ui.confirmWipe?"Tap again to erase everything":"Erase all hauls")+'</button></div>';
+  return h;
+}
+
+function sheetForm(){
+  var f=ui.form;
+  var titles={},i;
+  for(i=S.entries.length-1;i>=0&&Object.keys(titles).length<8;i--){
+    var t=S.entries[i].title; if(t)titles[t]=(titles[t]||0)+1;
+  }
+  var quick=Object.keys(titles).slice(0,6);
+  var h='<div class="scrim" data-act="scrim"><div class="sheet" role="dialog" aria-modal="true" aria-label="'+(f.id?"Edit haul":"Log a haul")+'">';
+  h+='<div class="grab"></div><h2>'+(f.id?"Edit haul":"Log a haul")+'</h2>';
+  h+='<div class="field"><label for="i-title">Where</label><input id="i-title" type="text" value="'+esc(f.title)+'" placeholder="Checkers, Woolies, Pick n Pay…" autocomplete="off">';
+  if(quick.length&&!f.id){
+    h+='<div class="chips">';
+    for(i=0;i<quick.length;i++)h+='<button type="button" data-act="quick" data-t="'+esc(quick[i])+'">'+esc(quick[i])+'</button>';
+    h+='</div>';
+  }
+  h+='</div>';
+  h+='<div class="field"><label for="i-amount">Amount ('+esc(S.cur)+')</label><input id="i-amount" type="text" inputmode="decimal" value="'+esc(f.amount)+'" placeholder="0.00"></div>';
+  h+='<div class="field"><label>Who paid</label><div class="who-pick">'+
+     '<button type="button" class="W" data-act="who" data-who="W" aria-pressed="'+(f.who==="W")+'">'+esc(S.names.W)+'</button>'+
+     '<button type="button" class="R" data-act="who" data-who="R" aria-pressed="'+(f.who==="R")+'">'+esc(S.names.R)+'</button></div></div>';
+  h+='<div class="field"><label for="i-date">Date</label><input id="i-date" type="date" value="'+esc(f.date)+'"></div>';
+  h+='<div class="field"><label for="i-cat">Category</label><select id="i-cat">';
+  for(i=0;i<S.cats.length;i++)h+='<option'+(S.cats[i]===f.cat?" selected":"")+'>'+esc(S.cats[i])+'</option>';
+  h+='</select></div>';
+  h+='<div class="field"><label for="i-note">Note (optional)</label><input id="i-note" type="text" value="'+esc(f.note)+'" placeholder="Big monthly stock-up"></div>';
+  if(f.err)h+='<div class="banner">'+esc(f.err)+'</div>';
+  h+='<div class="btnrow"><button class="btn" data-act="cancel">Cancel</button>'+
+     '<button class="btn primary" data-act="save">'+(f.id?"Save changes":"Add haul")+'</button></div>';
+  if(f.id)h+='<button class="btn danger" style="margin-top:8px" data-act="del" data-id="'+esc(f.id)+'">Delete this haul</button>';
+  h+='</div></div>';
+  return h;
+}
+
+/* ---------- actions ---------- */
+function readForm(){
+  var f=ui.form;
+  f.title=(document.getElementById("i-title")||{}).value||"";
+  f.amount=(document.getElementById("i-amount")||{}).value||"";
+  f.date=(document.getElementById("i-date")||{}).value||f.date;
+  f.cat=(document.getElementById("i-cat")||{}).value||f.cat;
+  f.note=(document.getElementById("i-note")||{}).value||"";
+}
+function saveForm(){
+  readForm();
+  var f=ui.form, amt=parseAmt(f.amount);
+  if(!isFinite(amt)||amt<=0){f.err="Enter an amount greater than 0.";render();return;}
+  if(!f.date){f.err="Pick a date for this haul.";render();return;}
+  var rec={id:f.id||uid(),date:f.date,who:f.who,title:(f.title||"").trim()||"Haul",
+           amount:r2(amt),cat:f.cat,note:(f.note||"").trim()};
+  var idx=-1;
+  for(var i=0;i<S.entries.length;i++)if(S.entries[i].id===rec.id){idx=i;break;}
+  if(idx>-1)S.entries[idx]=rec; else S.entries.push(rec);
+  var pi=-1;
+  for(i=0;i<pending.add.length;i++)if(pending.add[i].id===rec.id){pi=i;break;}
+  if(pi>-1)pending.add[pi]=rec; else pending.add.push(rec);
+  savePending();
+  ui.month=mkey(rec.date);
+  ui.form=null;
+  commit({now:true});
+}
+function delEntry(id){
+  S.entries=S.entries.filter(function(e){return e.id!==id;});
+  if(S.deleted.indexOf(id)===-1)S.deleted.push(id);
+  pending.add=pending.add.filter(function(e){return e.id!==id;});
+  if(pending.del.indexOf(id)===-1)pending.del.push(id);
+  savePending();
+  ui.form=null;
+  commit({now:true});
+}
+function csvText(){
+  var rows=[["Date","Month","Store","Who paid","Category","Note","Amount"]];
+  var es=S.entries.slice().sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:0;});
+  for(var i=0;i<es.length;i++){
+    var e=es[i];
+    rows.push([e.date,mkey(e.date),e.title,S.names[e.who]||e.who,e.cat||"",e.note||"",r2(e.amount).toFixed(2)]);
+  }
+  rows.push([]);
+  var ms=allMonths().slice().reverse();
+  rows.push(["Month","Period","Total",S.names.W+" paid",S.names.R+" paid",S.names.W+" share",S.names.R+" share","Owes","Amount"]);
+  for(var j=0;j<ms.length;j++){
+    var s=summarise(ms[j]);
+    rows.push([mlabel(s.k),rangeLabel(s.k),s.total.toFixed(2),s.paid.W.toFixed(2),s.paid.R.toFixed(2),
+               s.target.W.toFixed(2),s.target.R.toFixed(2),
+               s.settle?S.names[s.settle.from]+" to "+S.names[s.settle.to]:"square",
+               s.settle?s.settle.amount.toFixed(2):"0.00"]);
+  }
+  return rows.map(function(r){return r.map(function(c){
+    c=String(c==null?"":c);
+    return /[",\n]/.test(c)?'"'+c.replace(/"/g,'""')+'"':c;
+  }).join(",");}).join("\n");
+}
+function b64enc(str){
+  return btoa(unescape(encodeURIComponent(str))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+}
+function b64dec(str){
+  str=str.replace(/-/g,"+").replace(/_/g,"/");
+  while(str.length%4)str+="=";
+  return decodeURIComponent(escape(atob(str)));
+}
+/* compact wire form: [id, date, who, title, amount, cat, note] */
+function makeCode(scope){
+  var list=S.entries;
+  if(scope==="month")list=list.filter(function(e){return mkey(e.date)===ui.month;});
+  if(!list.length)return null;
+  var rows=list.map(function(e){
+    return [e.id,e.date,e.who,e.title||"",r2(e.amount),e.cat||"",e.note||""];
+  });
+  return "TROLLEY1:"+b64enc(JSON.stringify({v:2,e:rows}));
+}
+function importCode(txt){
+  txt=String(txt||"").trim();
+  var i=txt.indexOf("TROLLEY1:");
+  if(i<0)return {bad:true,msg:"That doesn’t look like a Trolley code — paste the whole thing, starting with TROLLEY1:"};
+  var raw;
+  try{ raw=JSON.parse(b64dec(txt.slice(i+9).replace(/[^A-Za-z0-9+/=_-]/g,""))); }
+  catch(err){ return {bad:true,msg:"That code couldn’t be read — it may have been cut short. Ask for it again."}; }
+  var list=Array.isArray(raw)?raw:(raw&&Array.isArray(raw.e)?raw.e:null);
+  if(!list)return {bad:true,msg:"That code couldn’t be read."};
+  var have={},n=0,dup=0,sum=0,dupSum=0,keys={},j;
+  for(j=0;j<S.entries.length;j++)have[S.entries[j].id]=1;
+  for(j=0;j<list.length;j++){
+    var x=list[j],e;
+    if(Array.isArray(x))e={id:x[0],date:x[1],who:x[2],title:x[3],amount:x[4],cat:x[5],note:x[6]};
+    else e=x;
+    if(!e||!e.id||!e.date)continue;
+    keys[mkey(String(e.date))]=1;
+    if(have[e.id]||S.deleted.indexOf(e.id)>-1){dup++;dupSum+=(+e.amount||0);continue;}
+    var rec={id:String(e.id),date:String(e.date),who:e.who==="R"?"R":"W",
+      title:String(e.title||"Haul"),amount:r2(+e.amount||0),
+      cat:String(e.cat||"Other"),note:String(e.note||"")};
+    S.entries.push(rec);have[rec.id]=1;n++;sum+=rec.amount;
+    pending.add.push(rec);
+  }
+  savePending();
+  if(n)saveMirror();
+  var ks=Object.keys(keys).sort();
+  var where=ks.length?(ks.length===1?" They’re in "+mlabel(ks[0])+".":" They span "+mlabel(ks[0])+" to "+mlabel(ks[ks.length-1])+"."):"";
+  if(!ks.length)return {bad:true,msg:"No hauls found in that code."};
+  if(!n)return {changed:false,keys:ks,
+    msg:"Already had all "+dup+" of those hauls ("+money(dupSum)+")."+where+" Nothing to do."};
+  return {changed:true,keys:ks,
+    msg:n+" haul"+(n===1?"":"s")+" imported, "+money(sum)+" in total"+(dup?" ("+dup+" already had)":"")+"."+where};
+}
+function doImport(){
+  var box=document.getElementById("f-imp");
+  var v=(box&&box.value)||ui.imp||"";
+  ui.codeOut=null;
+  if(!v.replace(/\s/g,"")){
+    ui.msg="Nothing in the box yet — paste the code and try again. It starts with TROLLEY1:";
+    render();return;
+  }
+  var res=importCode(v);
+  if(res.bad){ui.msg=res.msg;setImp(v);render();return;}
+  /* Land the user where the hauls actually are, not on whatever period
+     happened to be open — otherwise a good import looks like a failure. */
+  setImp("");ui.msg="";ui.flash=res.msg;
+  if(res.keys.length)ui.month=res.keys[res.keys.length-1];
+  ui.tab="month";
+  if(res.changed)commit({now:true});
+  else render();
+  window.scrollTo(0,0);
+}
+function shareCode(code){
+  ui.codeOut=code;ui.codeKind="Hand-off code";
+  try{localStorage.setItem(LS_SENT,today());}catch(e){}
+  if(navigator.share){
+    try{navigator.share({title:"Grocery hauls",text:code}).catch(function(){});}catch(e){}
+  }
+}
+function saveCsvFile(name){
+  var txt=csvText(), file=null;
+  try{file=new File([txt],name,{type:"text/csv"});}catch(e){}
+  if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
+    navigator.share({files:[file],title:name}).then(function(){
+      ui.msg="Saved "+name+".";render();
+    }).catch(function(err){
+      if(err&&err.name==="AbortError")return;
+      csvFallback(name,txt);
+    });
+    return;
+  }
+  csvFallback(name,txt);
+}
+function csvFallback(name,txt){
+  try{
+    var url=URL.createObjectURL(new Blob([txt],{type:"text/csv"}));
+    var a=document.createElement("a");a.href=url;a.download=name;
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(function(){URL.revokeObjectURL(url);},4000);
+    ui.codeOut=null;ui.msg="Downloaded "+name+".";
+  }catch(e){
+    ui.codeOut=txt;ui.codeKind="CSV";ui.msg="Couldn’t save a file here — copy the CSV text instead.";
+  }
+  render();
+}
+function lastSent(){
+  try{return localStorage.getItem(LS_SENT)||"";}catch(e){return "";}
+}
+
+/* ---------- events ---------- */
+root.addEventListener("click",function(ev){
+  var el=ev.target.closest("[data-act]");
+  if(!el)return;
+  var a=el.getAttribute("data-act");
+
+  if(a==="dismiss"){ui.flash="";render();return;}
+  if(a==="tab"){ui.tab=el.getAttribute("data-tab");ui.codeOut=null;ui.msg="";ui.flash="";ui.confirmWipe=false;render();return;}
+  if(a==="mprev"){ui.month=shiftMonth(ui.month,-1);render();return;}
+  if(a==="mnext"){ui.month=shiftMonth(ui.month,1);render();return;}
+  if(a==="gomonth"){ui.month=el.getAttribute("data-month");ui.tab="month";render();window.scrollTo(0,0);return;}
+  if(a==="open-form"){
+    ui.form={id:null,title:"",amount:"",who:me,date:today(),cat:S.cats[0]||"Other",note:"",err:null};
+    render();setTimeout(function(){var i=document.getElementById("i-title");if(i)i.focus();},30);return;
+  }
+  if(a==="edit"){
+    var id=el.getAttribute("data-id"),e=null;
+    for(var i=0;i<S.entries.length;i++)if(S.entries[i].id===id)e=S.entries[i];
+    if(!e)return;
+    ui.form={id:e.id,title:e.title,amount:r2(e.amount).toFixed(2),who:e.who,date:e.date,cat:e.cat||S.cats[0],note:e.note||"",err:null};
+    render();return;
+  }
+  if(a==="who"){readForm();ui.form.who=el.getAttribute("data-who");render();return;}
+  if(a==="quick"){readForm();ui.form.title=el.getAttribute("data-t");render();return;}
+  if(a==="cancel"){ui.form=null;render();return;}
+  if(a==="scrim"&&ev.target===el){ui.form=null;render();return;}
+  if(a==="save"){saveForm();return;}
+  if(a==="del"){delEntry(el.getAttribute("data-id"));return;}
+  if(a==="me"){me=el.getAttribute("data-who");try{localStorage.setItem(LS_ME,me);}catch(err){}render();return;}
+  if(a==="sendmonth"||a==="sendall"){
+    var scope=a==="sendmonth"?"month":"all";
+    var c=makeCode(scope);
+    if(c){shareCode(c);ui.msg="";}
+    else{ui.codeOut=null;ui.msg=scope==="month"?"No hauls logged for "+mlabel(ui.month)+" yet.":"No hauls logged yet.";}
+    render();return;
+  }
+  if(a==="gosend"){ui.tab="setup";ui.codeOut=null;ui.msg="";render();window.scrollTo(0,0);return;}
+  if(a==="copycode"){
+    var out=document.getElementById("f-out");
+    if(out){out.focus();out.select();try{document.execCommand("copy");}catch(err){}}
+    if(navigator.clipboard&&ui.codeOut){try{navigator.clipboard.writeText(ui.codeOut);}catch(err){}}
+    el.textContent="Copied";return;
+  }
+  if(a==="pasteimp"){
+    if(!navigator.clipboard||!navigator.clipboard.readText){
+      ui.msg="This browser won’t let the app read the clipboard — paste into the box by hand.";render();return;
+    }
+    navigator.clipboard.readText().then(function(t){
+      setImp(t||"");doImport();
+    }).catch(function(){
+      ui.msg="Couldn’t read the clipboard — paste into the box by hand.";render();
+    });
+    return;
+  }
+  if(a==="import"){doImport();return;}
+  if(a==="csv"){
+    var name="grocery-split-"+mkey(today())+".csv";
+    if(api&&api.download){
+      api.download({filename:name,data:csvText()}).then(function(){
+        ui.msg="Saved "+name+".";render();
+      }).catch(function(err){
+        if(err&&err.code==="declined")return;
+        ui.codeOut=csvText();ui.codeKind="CSV";ui.msg="Couldn’t hand you a file here — copy the CSV text instead.";render();
+      });
+    }else{
+      saveCsvFile(name);
+    }
+    return;
+  }
+  if(a==="wipe"){
+    if(!ui.confirmWipe){ui.confirmWipe=true;render();
+      setTimeout(function(){if(ui.confirmWipe){ui.confirmWipe=false;if(ui.tab==="setup")render();}},5000);return;}
+    ui.confirmWipe=false;
+    for(var k=0;k<S.entries.length;k++)S.deleted.push(S.entries[k].id);
+    S.entries=[];S.settled={};pending={add:[],del:[]};savePending();
+    ui.msg="All hauls erased.";
+    commit({now:true});return;
+  }
+});
+root.addEventListener("change",function(ev){
+  var el=ev.target.closest("[data-act]");
+  if(!el)return;
+  var a=el.getAttribute("data-act");
+  if(a==="settled"){S.settled[ui.month]=el.checked;if(!el.checked)delete S.settled[ui.month];commit();return;}
+  if(a==="cycleday"){
+    var d=parseInt(el.value,10);
+    S.cycleDay=(d>=1&&d<=28)?d:1;
+    ui.month=mkey(today());
+    commit();return;
+  }
+  if(a==="budget"){var b=parseAmt(el.value);S.budget=isFinite(b)&&b>0?r2(b):0;commit();return;}
+  if(a==="name"){var v=el.value.trim();if(v)S.names[el.getAttribute("data-who")]=v.slice(0,24);commit();return;}
+  if(a==="cur"){S.cur=el.value.trim().slice(0,3)||"R";commit();return;}
+  if(a==="cats"){
+    var list=el.value.split("\n").map(function(x){return x.trim();}).filter(Boolean);
+    S.cats=list.length?list.slice(0,20):["Groceries","Other"];commit();return;
+  }
+});
+root.addEventListener("input",function(ev){
+  if(ev.target&&ev.target.id==="f-imp"){setImp(ev.target.value);return;}
+  var el=ev.target.closest("[data-act='split']");
+  if(!el)return;
+  S.splitW=Math.max(0,Math.min(100,parseInt(el.value,10)||0));
+  var lw=root.querySelector(".splitview .s.W"), lr=root.querySelector(".splitview .s.R");
+  if(lw)lw.textContent=S.splitW+"%";
+  if(lr)lr.textContent=(100-S.splitW)+"%";
+  if(mode==="local"){saveMirror();return;}
+  clearTimeout(pubTimer);
+  syncState="busy";paintSync();
+  pubTimer=setTimeout(publishNow,1200);
+});
+
+/* ---------- boot ---------- */
+window.__trolley={buildDoc:buildDoc,summarise:summarise,state:function(){return S;},render:render,ui:ui};
+loadState();
+try{
+  var u=JSON.parse(sessionStorage.getItem(SS_UI)||"null");
+  if(u&&u.tab){ui.tab=u.tab;ui.month=u.month;}
+  sessionStorage.removeItem(SS_UI);
+}catch(e){}
+try{ui.imp=sessionStorage.getItem(SS_IMP)||"";}catch(e){}
+render();
+
+if(window.claude&&typeof window.claude.use==="function"){
+  Promise.all([
+    window.claude.use("artifact").catch(function(){return null;}),
+    window.claude.use("downloads").catch(function(){return null;})
+  ]).then(function(res){
+    var art=res[0], dl=res[1];
+    api={publish:art&&art.publish?function(h){return art.publish(h);}:null,
+         download:dl&&dl.save?function(r){return dl.save(r);}:null};
+    if(!api.publish){mode="local";syncState="local";}
+    else{
+      mode="writer";
+      if(restored>0)ui.flash="Put back "+restored+" haul"+(restored===1?"":"s")+" this phone had but the page didn’t.";
+      if(hasPending()||restored>0)commit({now:true});
+      else syncState="idle";
+    }
+    render();
+  });
+}else{
+  mode="local";syncState="local";render();
+}
+})();
+</script><div id="root"></div><script id="boot">
+(function(){
+  var src=document.getElementById("app-src").textContent;
+  var m="/*==JS==*/", i=src.indexOf(m);
+  var css=i<0?"":src.slice(0,i), js=i<0?src:src.slice(i+m.length);
+  var st=document.createElement("style"); st.textContent=css; document.head.appendChild(st);
+  var sc=document.createElement("script"); sc.textContent=js; document.body.appendChild(sc);
+})();
+</script></body></html>
